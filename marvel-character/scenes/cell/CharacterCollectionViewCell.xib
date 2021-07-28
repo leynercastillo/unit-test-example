@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="hQ2-lW-Feg" customClass="CharacterCollectionViewCell" customModule="marvel_character" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="401" height="352"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="BBq-4Q-63J">
+                <rect key="frame" x="0.0" y="0.0" width="401" height="352"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EdK-L5-s5P">
+                        <rect key="frame" x="8" y="8" width="385" height="336"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OEE-mA-2U3">
+                                <rect key="frame" x="0.0" y="0.0" width="385" height="336"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6QZ-cq-9k0">
+                                <rect key="frame" x="0.0" y="274.5" width="385" height="61.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="FQu-te-bGK">
+                                        <rect key="frame" x="8" y="8" width="369" height="45.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wuc-hc-c0b">
+                                                <rect key="frame" x="0.0" y="0.0" width="369" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D74-fv-XDP">
+                                                <rect key="frame" x="0.0" y="28.5" width="369" height="17"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="FQu-te-bGK" firstAttribute="leading" secondItem="6QZ-cq-9k0" secondAttribute="leading" constant="8" id="7yC-Na-FX7"/>
+                                    <constraint firstItem="FQu-te-bGK" firstAttribute="top" secondItem="6QZ-cq-9k0" secondAttribute="top" constant="8" id="OPz-VK-6cc"/>
+                                    <constraint firstAttribute="bottom" secondItem="FQu-te-bGK" secondAttribute="bottom" constant="8" id="ngc-EH-hcI"/>
+                                    <constraint firstAttribute="trailing" secondItem="FQu-te-bGK" secondAttribute="trailing" constant="8" id="uOf-wW-A9n"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="OEE-mA-2U3" secondAttribute="bottom" id="34Y-nh-W4c"/>
+                            <constraint firstItem="OEE-mA-2U3" firstAttribute="leading" secondItem="EdK-L5-s5P" secondAttribute="leading" id="64P-4w-XqU"/>
+                            <constraint firstItem="6QZ-cq-9k0" firstAttribute="leading" secondItem="EdK-L5-s5P" secondAttribute="leading" id="EeQ-P8-9X1"/>
+                            <constraint firstItem="OEE-mA-2U3" firstAttribute="top" secondItem="EdK-L5-s5P" secondAttribute="top" id="Og4-IN-XGq"/>
+                            <constraint firstAttribute="trailing" secondItem="OEE-mA-2U3" secondAttribute="trailing" id="UHX-xH-jii"/>
+                            <constraint firstAttribute="bottom" secondItem="6QZ-cq-9k0" secondAttribute="bottom" id="m4s-HE-IuS"/>
+                            <constraint firstAttribute="trailing" secondItem="6QZ-cq-9k0" secondAttribute="trailing" id="qiC-Fp-yiD"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="EdK-L5-s5P" firstAttribute="top" secondItem="BBq-4Q-63J" secondAttribute="top" constant="8" id="GaO-53-fnK"/>
+                    <constraint firstItem="EdK-L5-s5P" firstAttribute="leading" secondItem="BBq-4Q-63J" secondAttribute="leading" constant="8" id="XxZ-om-Yh2"/>
+                    <constraint firstAttribute="bottom" secondItem="EdK-L5-s5P" secondAttribute="bottom" constant="8" id="dY3-Mt-9sT"/>
+                    <constraint firstAttribute="trailing" secondItem="EdK-L5-s5P" secondAttribute="trailing" constant="8" id="fig-HI-LAt"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="401" height="352"/>
+            <connections>
+                <outlet property="characterImageView" destination="OEE-mA-2U3" id="ybD-cC-SvR"/>
+                <outlet property="descriptionLabel" destination="D74-fv-XDP" id="F87-O3-fbq"/>
+                <outlet property="titleLabel" destination="Wuc-hc-c0b" id="04G-Ru-Wbh"/>
+            </connections>
+            <point key="canvasLocation" x="-63.04347826086957" y="-129.91071428571428"/>
+        </collectionViewCell>
+    </objects>
+</document>
